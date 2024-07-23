@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <nav class="py-4 bg-teal-500 flex justify-between">
+        <div class="left text-lg font-bold mx-5">Tutor Finder</div>
+        <div class="right flex justify-center font-bold ml-16 ">
+          <li class="list-none mx-5 hover:text-white"><a href="./index.html">HOME</a></li>
+          <li class="list-none mx-5 hover:text-white"><a href="./index.html">ABOUT</a></li>
+          <li class="list-none mx-5 hover:text-white"><a href="./index.html">COURSES</a></li>
+          <li class="list-none mx-5 hover:text-white"><a href="./index.html">CONTACT</a></li>
+        <button class="rounded-sm hover:text-white bg-teal-500 text-sm font-bold w-32 h-8  mx-5  border-2 border-black">
+            <li class="list-none mx-5 hover:text-white"><a href="./register.html">REGISTER</a></li>
+        </button>
+    </nav>    
+    <section class="flex justify-around my-4 ">
+        <div class="left-0 w-2/4 text-4xl px-16 py-16 my-12 mx-12 font-medium font-serif">
+            <div class="ml-5 text-teal-500">WELCOME Back</div>
+                <h4 class="text-lg ml-6 mt-2 opacity-50 text-teal-500">login to continue</h4>
+            <section id="LOGIN">
+                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                  <form class="space-y-6">
+                    <div>
+                      <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+                      <div class="mt-2">
+                        <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+              
+                    <div>
+                      <div class="flex items-center justify-between">
+                        <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+                        <div class="text-sm">
+                          <a href="#" class="font-semibold text-teal-500 hover:text-teal-600">Forgot password?</a>
+                        </div>
+                      </div>
+                      <div class="mt-2">
+                        <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                      </div>
+                    </div>
+              
+                    <div>
+                      <button type="submit" class="flex w-full justify-center rounded-md bg-teal-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+                    </div>
+                  </form>
+              
+                  <p class="mt-10 text-center text-sm text-gray-500">
+                    Not a member?
+                    <a href="./register.html" class="font-semibold leading-6 text-teal-500 hover:text-teal-600">Register</a>
+                  </p>
+                </div>
+              </div>
+        <div class="right-0 w-2/5 px-7 mt-12 mr-20 mb-10 ml-10">
+            <img src="./login.jpg">
+        </div>
+    </section>
+<!-- Login form -->
+
+</section>
+</body>
+</html>

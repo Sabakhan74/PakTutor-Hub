@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <nav class="py-4 bg-teal-500 flex justify-between">
+        <div class="left text-lg font-bold mx-5">PakTutor Hub</div>
+        <div class="right flex justify-center font-bold ml-16 ">
+          <li class="list-none mx-5 hover:text-white"><a href="./index.html">HOME</a></li>
+          <li class="list-none mx-5 hover:text-white"><a href="./index.html">ABOUT</a></li>
+          <li class="list-none mx-5 hover:text-white"><a href="./index.html">COURSES</a></li>
+          <li class="list-none mx-5 hover:text-white"><a href="./index.html">CONTACT</a></li>
+        <button class="rounded-sm hover:text-white bg-teal-500 text-sm font-bold w-32 h-8  mx-5  border-2 border-black">
+            <li class="list-none mx-5 hover:text-white"><a href="./login.html">LOGIN</a></li>
+        </button>
+    </nav>
+    <section class="flex justify-around my-4 ">
+<!-- Registration -->
+<section id="REGISTER">
+    <div class="mt-2">
+    <h1 class="left-0 text-4xl font-medium font-serif text-center text-teal-500 ml-10 ">Register at Tutor Finder</h1>
+    <p class=" text-lg w-auto text-center ml-10 mt-2 mb-5 ">If you are a tutor or student looking to make full use of Tutor Finder please fill in the form below.</p>
+    </div>   
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+        <form class="space-y-6 ml-5">
+        <div>
+            <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Enter Name</label>
+            <div class="mt-2">
+              <input id="name" name="name" type="name" autocomplete="name" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <div>
+            <label for="number" class="block text-sm font-medium leading-6 text-gray-900">Enter Phone Number</label>
+            <div class="mt-2">
+              <input placeholder="1234-1234567" pattern="[0-9]{4}-[0-9]{7}" id="number" name="number" type="phone" autocomplete="number" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+        <div>
+          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+          </div>
+        </div>
+        <div>
+            <div class="flex items-center justify-between">
+              <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+            </div>
+            <div class="mt-2">
+              <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <label for="Gender" class="block text-sm font-medium leading-6 text-gray-900">Gender</label>
+            <input type="radio" id="MALE" name="Gender" value="MALE">
+            <label for="MALE">Male</label><br>
+            <input type="radio" id="FEMALE" name="Gender" value="FEMALE">
+            <label for="FEMALE">Female</label><br>
+          </div>
+          <div class="flex items-center justify-between">
+            <label for="Register" class="block text-sm font-medium leading-6 text-gray-900">Register<br>as a:</label>
+            <input type="radio" id="Student" name="Register" value="Student">
+            <label for="Student">Student</label><br>
+            <input type="radio" id="Teacher" name="Register" value="Teacher">
+            <label for="Teacher">Teacher</label><br>
+          </div>
+          <div>
+            <button type="submit" class="flex w-full justify-center rounded-md bg-teal-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-teal-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
+          </div>
+</form>
+</div>
+</section>
+<div class="right-0 w-2/5 px-7 mt-36 mr-12 ml-10">
+    <img src="./register.jpg">
+</div>
+</section>
+
+</body>
+</html>

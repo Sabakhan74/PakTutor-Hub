@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Admin Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom dropdown styling to handle display toggle */
+        .dropdown-menu {
+            display: none;
+        }
+        .dropdown-menu.active {
+            display:block;
+        }
+    </style>
+    
+</head>
+<body class="bg-green-100">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-teal-500 text-white">
+            <div class="p-4">
+                <h1 class="text-2xl font-bold">PakTutor Hub</h1>
+            </div>
+            <nav class="mt-4">
+                <a href="#" class="block py-2.5 px-4 bg-teal-700 rounded">Dashboard</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-teal-900 rounded">Course List</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-teal-900 rounded">Tutor List</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-teal-900 rounded">Student List</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-teal-900 rounded">Inquiries</a>
+                <h2 class="mt-4 px-4 text-lg font-semibold">Maintenance</h2>
+                <a href="#" class="block py-2.5 px-4 hover:bg-teal-900 rounded">User List</a>
+                <a href="#" class="block py-2.5 px-4 hover:bg-teal-900 rounded">Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <header class="flex items-center justify-between">
+                <h2 class="text-3xl font-bold">Welcome, Administrator Admin!</h2>
+                <div class="relative">
+                    <button id="profile-btn" class="flex items-center focus:outline-none">
+                    <span class="mr-4 font-bold">Administrator Admin</span>
+                    <img src="./software-engineer.png" alt="Admin Avatar" class="w-10 h-10 rounded-full">
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-menu text-white absolute right-0 mt-2 w-48 bg-teal-500 rounded-md shadow-lg py-2">
+                        <a href="#" class="block px-4 py-2 font-bold hover:bg-teal-900">Login</a>
+                        <a href="#" class="block px-4 py-2 font-bold hover:bg-teal-900">Logout</a>
+                    </div>
+                </div>
+            </header>
+
+            <section class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-red-300 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Active Courses</h3>
+                    <p class="text-3xl mt-2">4</p>
+                </div>
+                <div class="bg-yellow-200 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Inactive Courses</h3>
+                    <p class="text-3xl mt-2">0</p>
+                </div>
+                <div class="bg-green-300 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Waiting for Approval Tutors</h3>
+                    <p class="text-3xl mt-2">0</p>
+                </div>
+                <div class="bg-blue-300 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Verified Tutors</h3>
+                    <p class="text-3xl mt-2">2</p>
+                </div>
+                <div class="bg-orange-300 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Inactive Tutors</h3>
+                    <p class="text-3xl mt-2">0</p>
+                </div>
+                <div class="bg-purple-300 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Blocked Tutors</h3>
+                    <p class="text-3xl mt-2">0</p>
+                </div>
+                <div class="bg-pink-300 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Read Inquiries</h3>
+                    <p class="text-3xl mt-2">1</p>
+                </div>
+                <div class="bg-amber-300 p-4 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold">Unread Inquiries</h3>
+                    <p class="text-3xl mt-2">1</p>
+                </div>
+            </section>
+
+            <section class="mt-6 flex justify-center">
+                <img src="./dashboard.png" alt="Dashboard Illustration" class="w-3/4 rounded shadow">
+            </section>
+        </main>
+    </div>
+    <script>
+        document.getElementById('profile-btn').addEventListener('click', function () {
+            var dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.classList.toggle('active');
+        });
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('#profile-btn') && !event.target.closest('#dropdown-menu')) {
+                var dropdowns = document.getElementsByClassName('dropdown-menu');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('active')) {
+                        openDropdown.classList.remove('active');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

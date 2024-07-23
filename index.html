@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="relative">
+        <nav class="py-4 bg-teal-500 flex justify-around fixed top-0 left-0 right-0 border-solid border-2 border-teal-600">
+            <div class="left text-lg font-bold mr-16">PakTutor Hub</div>
+            <div class="right flex justify-center font-bold ml-16 ">
+            <li class="list-none mx-5 hover:text-white"><a href="#">HOME</a></li>
+            <li class="list-none mx-5 hover:text-white"><a href="#About">ABOUT</a></li>
+            <li class="list-none mx-5 hover:text-white"><a href="#COURSES">COURSES</a></li>
+            <li class="list-none mx-5 hover:text-white"><a href="#CONTACT">CONTACT</a></li>
+            <button class="rounded-sm hover:text-white bg-teal-500 text-sm font-bold w-32 h-8 mx-5 border-2 border-black" onclick="document.getElementById('id01').style.display='block'">
+            <li class="list-none mx-5 hover:text-white"><a href="./login.html">LOGIN</a></li>
+            </button>
+            <button class="rounded-sm hover:text-white bg-teal-500 text-sm font-bold w-32 h-8  border-2 border-black">
+            <li class="list-none mx-5 hover:text-white"><a href="./register.html">REGISTER</a></li>
+            </button>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <main>
+        <!-- home -->
+        <div class="flex justify-around items-center p-7 my-4">
+            <div class="md:w-1/2 mb-8 md:mb-0 ml-2">    
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Find the Perfect <span class="text-teal-500">Tutor</span> for Your Needs</h1>  
+                <p class="text-lg md:text-xl mb-4">Our advanced tutor finding system makes it easy to connect with experienced, qualified tutors across a wide range of subjects. Whether you're seeking academic support, language lessons, or specialized skills training, we have the perfect match for you.</p>
+                <span class="font-bold md:text-2xl" id="element"></span><br>
+                <a href="./register.html" class="inline-block bg-teal-500 text-white font-semibold mt-2 py-3 px-6 rounded-lg transition-colors duration-300 hover:bg-teal-700">Get Started Now</a>
+            </div>
+            <div class="md:w-1/2 flex items-center justify-center">
+                <img src="./image 1.png" alt="Tutor Image">
+            </div>
+        </div>
+            <hr class="text-teal-500 border-t my-5 mx-10">
+<!--About-->
+<section id="About" class="flex justify-around py-20 font-serif bg-teal-500 ">
+  <div class="left-0 rounded-lg w-3/6 ml-16">
+  <img class="rounded-lg" src="./about.jpg">
+  </div>    
+  <div class="right-0 w-2/4">
+      <h2 class="text-4xl text-center text-teal-950 font-medium py-6">About Tutor Finder App</h2>
+      <p class="text-lg mt-3 px-5 ">Discovering the perfect tutor for your educational needs is now effortless with our innovative tutor finding app. Whether you're seeking assistance in mathematics, language arts, science, or any other subject, our platform connects you with experienced tutors who are tailored to match your requirements. With a user-friendly interface and advanced search filters, finding the ideal tutor has never been more convenient. Say goodbye to the hassle of searching through endless listings and let our app streamline the process, ensuring that you receive personalized academic support that propels you towards success.</p>        
+      <a href="#CONTACT">
+      <button class="rounded-full font-bold  hover:text-white bg-teal-500 w-32 h-8 border-solid border-2 mt-5 ml-6 mb-5 border-black">Contact Me</button> 
+      </a>
+  </div>
+</section>
+<!--Cards-->
+  <div class="grid grid-cols-3 gap-4 m-10 px-14">
+      <div class="rounded-lg border-2 bg-teal-500 border-teal-600 p-2">
+          <img class="w-10 h-11" src="./1to1.png">
+           <h4 class="font-bold pt-3 pb-5 ">One To One Tutoring  </h4>
+          <p>Elevate your learning with our one-to-one tutoring service. Receive personalized attention and guidance to excel in any subject. Flexible scheduling and convenient online sessions make achieving academic success easier than ever. Unlock your full potential today.
+          </p>
+      </div>
+
+      <div class="rounded-lg border-2 bg-teal-500  border-teal-600 p-2">
+          <img class="w-10 h-10" src="./home.png">
+          <h4 class="font-bold pt-3 pb-5 ">Learn From Home</h4>
+          <p>
+            Discover the convenience and flexibility of learning from the comfort of your own home. Our platform offers a wide range of online courses and tutoring services, allowing you to expand your knowledge and skills without ever having to leave your house.Start your journey to learning today.
+          </p>
+      </div>
+
+      <div class="rounded-lg border-2  bg-teal-500 border-teal-600 p-2">
+          <img class="w-10 h-10" src="./homework.png">
+          <h4 class="font-bold pt-3 pb-5 ">Personalized Homework</h4>
+          <p>Our platform provides dedicated tutors who craft customized assignments to reinforce classroom learning and address your specific challenges. Say goodbye to generic worksheets and hello to personalized homework. Unlock your potential and conquer homework with confidence.
+          </p>
+      </div>
+
+      <div class="rounded-lg border-2  bg-teal-500 border-teal-600 p-2">
+        <img class="w-10 h-10" src="./education.png">
+        <h4 class="font-bold pt-3 pb-5 ">Personalized Learning Experience</h4>
+        <p>Our system connects students with tutors who match their unique learning styles and academic needs, ensuring a customized and effective educational journey.Receive tailored lesson plans that targets your specific areas for improvement, helping you achieve your academic goals faster.</p>
+    </div>
+
+    <div class="rounded-lg border-2  bg-teal-500 border-teal-600 p-2">
+        <img class="w-10 h-10" src="./team.png">
+        <h4 class="font-bold pt-3 pb-5 ">Convenience and Flexibility</h4>
+        <p>Easily find and schedule sessions with expert tutors at times that fit your busy lifestyle. Enjoy the flexibility of online tutoring, accessible from anywhere, eliminating the need for travel.Benefit from the ability to choose from a wide range of subjects and specializations.</p>
+    </div>
+
+    <div class="rounded-lg border-2  bg-teal-500 border-teal-600 p-2">
+        <img class="w-10 h-10" src="./trust.png">
+        <h4 class="font-bold pt-3 pb-5 ">Quality and Trust:</h4>
+        <p>Benefit from our rigorous tutor vetting process, which includes qualifications verification and reviews from other students. This ensures you receive top-quality tutoring from trusted professionals.Access a reliable support system with continuous feedback and performance tracking.</p>
+    </div>                  
+  </div>
+
+</section>
+<hr class="text-teal-500 border-t my-2 mx-10">
+
+<section class="bg-green-100">
+    <div class="max-w-4xl mx-auto p-5">
+        <h1 class="text-3xl font-bold text-center mb-8">Choosing a tutor is <span class="text-teal-500">simple</span></h1>
+        
+            <div class="grid grid-cols-4 gap-8 ">
+            <div class="text-wrap">
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <div class="mb-4">
+                        <span class=" bg-green-100 text-teal-500 font-bold rounded-full h-12 w-12 flex items-center justify-center">1</span>
+                    </div>
+                    <h2 class="font-semibold text-lg mb-2">Get Started</h2>
+                    <p class="text-gray-600 mb-4">Create your account in just a few seconds and gain access to a wide range of expert tutors.</p>
+                    <a href="./register.html" class="font-medium text-teal-500 mb-5 underline inline-block">Register</a>
+                    <p class="text-gray-600 bg-green-100 border-solid border-2 rounded-lg">Takes few seconds</p>
+                </div>
+            </div>
+            <div class="text-wrap">
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <div class="mb-4">
+                        <span class="bg-green-100 text-teal-500 font-bold rounded-full h-12 w-12 flex items-center justify-center">2</span>
+                    </div>
+                    <h2 class="font-semibold text-lg mb-2">Create Request</h2>
+                    <p class="text-gray-600 mb-4">Write what you want to learn so the relevant tutor(s) can contact you within the platform. Your contact details remain private at all times.</p>
+                    <p class="text-gray-600 bg-green-100 border-solid border-2 rounded-lg ">Takes 1 min</p>
+                </div>
+            </div>
+            <div class="text-wrap">
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <div class="mb-4">
+                        <span class=" bg-green-100 text-teal-500 font-bold rounded-full h-12 w-12 flex items-center justify-center">3</span>
+                    </div>
+                    <h2 class="font-semibold text-lg mb-2">Take Free Demo</h2>
+                    <p class="text-gray-600 mb-4">Check inbox, respond to tutors and schedule a free demo. Decide your fee and other details with the tutor. It's a simple and hassle-free process.</p>
+                    <p class="text-gray-600 bg-green-100 border-solid border-2 rounded-lg">Takes &lt; 1 day</p>
+                </div>
+            </div>
+            <div class="text-wrap">
+                <div class="bg-white shadow-md rounded-lg p-4">
+                    <div class="mb-4">
+                        <span class=" bg-green-100 text-teal-500 font-bold rounded-full h-12 w-12 flex items-center justify-center">4</span>
+                    </div>
+                    <h2 class="font-semibold text-lg mb-2">Start Tuition</h2>
+                    <p class="text-gray-600 mb-4">Pay your fee to start classes. Classes are auto-recorded for transparency and are available on your dashboard. Payment is calculated per hour.</p>
+                    <p class="text-gray-600 bg-green-100 border-solid border-2 rounded-lg">Congratulations!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr class="text-teal-500 border-t my-2 mx-10">
+
+<section>
+    <div class="max-w-6xl mx-auto py-12 px-4">
+        <h2 class="text-4xl font-bold text-center mb-8">What <span class="text-teal-500">Students</span> & <span class="text-yellow-500">Parents</span> say about our Tutors</h2>
+        <div class="flex justify-end mb-4">
+            <a href="#" class="bg-teal-500 font-semibold text-lg text-white py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-teal-700">View All Reviews</a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial Card 1 -->
+            <div class="bg-green-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Student</span>
+                    <span class="bg-yellow-400 text-white text-xs font-semibold px-2.5 py-0.5 rounded">5.0 <span class="text-xs">&#9733;</span></span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Ninni</h3>
+                <p class="text-sm text-gray-600 mb-4">chemistry's class</p>
+                <p class="text-gray-700 mb-4">My daughter fully understands her subject now and is very confident in getting good grades during her GCSEs. I recommend!<br><br><br><br><br><br></p>
+                <div class="flex items-center">
+                    <img src="./librarian_9193832.png" alt="Tutor" class="w-10 h-10 rounded-full mr-3">
+                    <div>
+                        <p class="text-sm font-semibold">Fasih A.</p>
+                        <p class="text-xs text-gray-500">Tutor</p>
+                    </div>
+                    <p class="ml-auto text-xs text-gray-500">15/05/2024</p>
+                </div>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="bg-green-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Student</span>
+                    <span class="bg-yellow-400 text-white text-xs font-semibold px-2.5 py-0.5 rounded">4.5 <span class="text-xs">&#9733;</span></span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Yashra</h3>
+                <p class="text-sm text-gray-600 mb-4">Demo Class</p>
+                <p class="text-gray-700 mb-4">In my experience, all Teachers put their heart into their job and connect with students to pass on the content to be delivered. Teachers add value to a student’s life by imparting content to develop their ability to think on a daily basis. So dear friend she deserves to be grateful for her services provided.</p>
+                <div class="flex items-center">
+                    <img src="./Tutor.jpg" alt="Tutor" class="w-10 h-10 rounded-full mr-3">
+                    <div>
+                        <p class="text-sm font-semibold">Laiba H.</p>
+                        <p class="text-xs text-gray-500">Tutor</p>
+                    </div>
+                    <p class="ml-auto text-xs text-gray-500">08/05/2024</p>
+                </div>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="bg-green-100 p-6 rounded-lg shadow-lg">
+                <div class="flex items-center justify-between mb-4">
+                    <span class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Student</span>
+                    <span class="bg-yellow-400 text-white text-xs font-semibold px-2.5 py-0.5 rounded">5.0 <span class="text-xs">&#9733;</span></span>
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Maheen</h3>
+                <p class="text-sm text-gray-600 mb-4">Demo Class</p>
+                <p class="text-gray-700 mb-4">The teaching strategies are excellent. The flow of the lecture is steady, as is maintaining a good understanding. The lectures are helpful and interactive. Highly satisfied :))) <br><br><br><br></p>
+                <div class="flex items-center">
+                    <img src="./tutor2.jpg" alt="Tutor" class="w-10 h-10 rounded-full  mr-3">
+                    <div>
+                        <p class="text-sm font-semibold">Asifa</p>
+                        <p class="text-xs text-gray-500">Tutor</p>
+                    </div>
+                    <p class="ml-auto text-xs text-gray-500">02/05/2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="COURSES">
+    <div class="max-w-6xl mx-auto py-12 px-4">
+        <h2 class="text-4xl font-bold text-center mb-8">Discover Our Extensive <span class="text-teal-500">Courses </span> & <span class="text-yellow-500">Subjects</span> Catalog</h2>
+        <div class="flex justify-end mb-4">
+            <a href="#" class="bg-teal-500 font-semibold text-lg text-white py-2 px-4 rounded-lg transition-colors duration-300 hover:bg-teal-700">View All Courses</a>
+        </div>
+        <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-3 gap-8 font-semibold">
+            <div class="bg-green-100 p-6 rounded-lg shadow-lg ">
+               <div class="flex justify-normal mb-2">
+                <img class="w-10 h-11" src="./language.png">
+                <h2 class="font-bold text-lg ml-4 mt-1">Languages</h2>
+               </div>
+               <li class="list-none mx-5 hover:text-gray-400">English</li>
+               <li class="list-none mx-5 hover:text-gray-400">Urdu</li>
+               <li class="list-none mx-5 hover:text-gray-400">Sindhi</li>
+               <li class="list-none mx-5 hover:text-gray-400"> Arabic</li>
+            </div>
+
+            <div class="bg-green-100 p-6 rounded-lg shadow-lg ">
+                <div class="flex justify-normal mb-2">
+                 <img class="w-10 h-11" src="./science.png">
+                 <h2 class="font-bold text-lg ml-4 mt-1">Science</h2></div>
+                <li class="list-none mx-5 hover:text-gray-400">Math</li>
+                <li class="list-none mx-5 hover:text-gray-400">Statistics</li>
+                <li class="list-none mx-5 hover:text-gray-400">ICT</li>
+                <li class="list-none mx-5 hover:text-gray-400">Physics</li>
+                <li class="list-none mx-5 hover:text-gray-400">Chemistry</li>
+                <li class="list-none mx-5 hover:text-gray-400">Biology</li>
+             </div>
+
+             <div class="bg-green-100 p-6 rounded-lg shadow-lg ">
+                <div class="flex justify-normal mb-2">
+                 <img class="w-10 h-11" src="./humanity.png">
+                 <h2 class="font-bold text-lg ml-4 mt-1">Humanities</h2></div>
+                <li class="list-none mx-5 hover:text-gray-400">Law</li>
+                <li class="list-none mx-5 hover:text-gray-400">Sociology</li>
+                <li class="list-none mx-5 hover:text-gray-400">Education</li>
+                <li class="list-none mx-5 hover:text-gray-400">Pak Studies</li>
+                <li class="list-none mx-5 hover:text-gray-400">ESP/Business English</li>
+                <li class="list-none mx-5 hover:text-gray-400">Art</li>
+                <li class="list-none mx-5 hover:text-gray-400"> Quran Recitation</li>
+                <li class="list-none mx-5 hover:text-gray-400">Islamiyat</li>
+             </div>
+
+             <div class="bg-green-100 p-6 rounded-lg shadow-lg">
+                <div class="flex justify-normal mb-2">
+                 <img class="w-10 h-11" src="./business.png">
+                 <h2 class="font-bold text-lg ml-4 mt-1">Business</h2></div>
+                 <li class="list-none mx-5 hover:text-gray-400">Economics </li>
+                 <li class="list-none mx-5 hover:text-gray-400">Business Studies</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Accounting & Finance</li>
+             </div>
+
+             <div class="bg-green-100 p-6 rounded-lg shadow-lg ">
+                <div class="flex justify-normal mb-2">
+                 <img class="w-10 h-11" src="./courses.png">
+                 <h2 class="font-bold text-lg ml-4 mt-1">Courses</h2></div>
+                 <li class="list-none mx-5 hover:text-gray-400">Intro to Scratch Programming</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Creative Writing</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Video Editing</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Learn Python</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Intro to Web Programming</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Full Stack Development</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Intro to MySQL Databases</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Spoken English</li>
+             </div>
+
+             <div class="bg-green-100 p-6 rounded-lg shadow-lg ">
+                <div class="flex justify-normal mb-2">
+                 <img class="w-10 h-11" src="./coding-language - Copy.png">
+                 <h2 class="font-bold text-lg ml-4 mt-1">Programming Languages</h2></div>
+                 <li class="list-none mx-5 hover:text-gray-400">JavaScript</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Python</li>
+                 <li class="list-none mx-5 hover:text-gray-400">C++</li>
+                 <li class="list-none mx-5 hover:text-gray-400">C#</li>
+                 <li class="list-none mx-5 hover:text-gray-400">PHP</li>
+                 <li class="list-none mx-5 hover:text-gray-400">JAVA</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Go</li>
+                 <li class="list-none mx-5 hover:text-gray-400">Swift</li>
+             </div>
+             
+        </div>
+    </section>      
+    
+    <!--Contact-->
+
+    <section id="CONTACT"class="py-16 font-serif">
+        <div class="text-center pb-10">
+            <h2 class="text-4xl font-bold text-center text-teal-500">CONTACT</h2>
+            <h2 class="py-4 text-lg font-medium">Fill out the form and fill me in with the details. I love meeting new people!</h2>
+        </div>   
+    <div class="max-w-screen-md mx-auto ">
+      <form action="" method="post" class="contact-form" class="mt-6">
+        <div class="mb-4">
+          <label for="Name" class="block font-semibold">Name</label>
+          <input class="w-full px-3 py-2 border-teal-600 border-2 rounded-md outline-none" type="text" id="name" name="name" required>
+        </div>
+        <div class="mb-4 ">
+          <label for="Email" class="block font-semibold">Email</label>
+          <input class="w-full px-3 py-2 border-2 border-teal-600 rounded-md outline-none" type="text" id="email" name="email" required>
+        </div>
+        <div class="mb-4 ">
+          <label for="Email" class="block font-semibold">Subject</label>
+          <input class="w-full px-3 py-2 border-2 border-teal-600 rounded-md outline-none" type="text" id="subject" name="subject" required>
+        </div>
+        <div class="mb-6 ">
+          <label for="Message" class="block font-semibold">Message</label>
+          <textarea class="w-full px-3 py-2 border-2 border-teal-600 rounded-md outline-none" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-teal-600 text-white py-2 rounded-md outline-none">Send Message</button>
+      </form>
+  </div>
+</section>
+<!--Footer-->
+
+<footer class="bg-teal-600 border-solid border-2 border-teal-600 py-8 text-black text-2xl flex justify-center items-center">
+    <i class="fa fa-facebook w-12 h-12 mx-4 hover:text-white"></i>
+    <i class="fa fa-instagram w-12 h-12 mx-4 hover:text-white"></i>
+    <i class="fa fa-snapchat w-12 h-12 mx-4 hover:text-white"></i>
+    <i class="fa fa-pinterest w-12 h-12 mx-4 hover:text-white"></i>
+    <i class="fa fa-twitter w-12 h-12 mx-4 hover:text-white"></i>
+    <i class="fa fa-linkedin w-12 h-12 mx-4 hover:text-white"></i>
+  </footer> 
+        
+<!--TYPE JS-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Choose your tutor conveniently!'],
+      typeSpeed: 50,
+    });
+</script>    
+</body>
+</html>
